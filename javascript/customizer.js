@@ -41,8 +41,8 @@ $(function () {
                 $('#recipent').val(nickName);
             }
         }
-        if (betaTester === 'yes') {
-            window.location.replace('/beta' + page);
+        if (betaTester !== 'yes') {
+            window.location.replace('/nicolinet' + page);
         }
 
     }
