@@ -1,0 +1,113 @@
+/*MOAR Fonts:
+font-family: 'Orbitron', sans-serif;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Baloo Bhaina', cursive;
+*/
+
+.Yo {
+    display: inline-block;
+    font: 30px 'Sigmar One', cursive;
+    color: red;
+    transform: rotate(-10deg);
+}
+
+.body {
+    background-color: #EEEFF1;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#amazonTitle {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #FF9900;
+}
+
+.amazonSez {
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightgray;
+}
+
+.purchaseDiv {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.purchaseTitle {
+    font-family: 'Sigmar One', cursive;
+    color: #232F3E;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.buyImage {
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+
+#plus {
+    font-size: 200px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.buyButton {
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #FF9900;
+    color: #232F3E;
+    font-size: 25px;
+    font-family: 'Poiret One', cursive;
+}
+
+.buyButton a {
+    text-decoration: none;
+}
+
+.NicoliNetTheme h2 {
+    display: inline-block;
+    vertical-align: middle;
+    font: 30px 'Sigmar One';
+    color: Mediumblue;
+}
+
+.NicoliNetTheme img {
+    display: inline-block;
+    width: 5%;
+    vertical-align: middle;
+}
+
+.NicoliNetTheme p {
+    display: inline-block;
+    vertical-align: middle;
+    font: 20px 'Baloo bhaina';
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    height: 200px;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.footer p {
+    padding: 20px 20px;
+}
+
+.Nicolinet.com {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+}
