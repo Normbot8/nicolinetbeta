@@ -1,2 +1,2 @@
 # nicolinetbeta
-Betas for NicoliNet
+Betas for NicoliNet (there are currently no betas)
