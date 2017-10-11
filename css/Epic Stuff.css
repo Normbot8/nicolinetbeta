@@ -1,0 +1,157 @@
+/*MOAR Fonts:
+font-family: 'Orbitron', sans-serif;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Baloo Bhaina', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Audiowide', cursive;
+*/
+
+.titlesection iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titlesection {
+    border-bottom: 2px solid lightgray;
+}
+
+.pagemap {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: scroll;
+}
+
+.pagemap h1 {
+    text-align: center;
+    padding-top: 20px;
+    font: 35px 'Luckiest Guy', cursive;
+    color: darkgreen;
+}
+
+.pagemap h2 {
+    font: 15px Arial, sans-serif;
+    color: darkgray;
+    text-align: center;
+}
+
+.pagemap img {
+    display: block;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.piano {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: scroll;
+}
+
+.piano h1 {
+    font: 40px 'Poiret One', cursive;
+    text-align: center;
+}
+
+.piano img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+.piano p {
+    font: 25px 'Poiret One', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nicolinet {
+    font: 25px 'orbitron', cursive;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+}
+
+.cheesenpasta {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: scroll;
+}
+
+.cheesenpasta h1 {
+    font: 39px 'Luckiest Guy', cursive;
+    text-align: center;
+    color: #F4CD15;
+}
+
+.cheesenpasta img {
+    width: 79%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cheesenpasta p {
+    font: 25px 'Architects Daughter', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.thisvid {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: scroll;
+}
+
+.thisvid h1 {
+    font: 40px 'Audiowide', cursive;
+    text-align: center;
+}
+
+.thisvid img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.thisvid p {
+    font: 25px 'Audiowide', cursive;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.horn {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: scroll;
+}
+
+.horn h1 {
+    font: 40px 'Baloo Bhaina', cursive;
+    text-align: center;
+}
+
+.horn iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.horn p {
+    font: 25px 'Audiowide', cursive;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

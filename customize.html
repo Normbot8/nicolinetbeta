@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NicoliNet</title>
+    <link rel='stylesheet' type="text/css" href="css/header.css">
+    <link rel='stylesheet' type='text/css' href='css/footer.css'>
+    <link rel="stylesheet" type="text/css" href="css/customize.css">
+    <link rel="icon" href="pics/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Baloo+Bhaina|Orbitron|Permanent+Marker|Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='css/termsofservice.css'>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-98369927-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<!-- Renovated -->
+
+<body>
+    <div class="heading">
+        <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+
+        </script>
+        <h2 value="PLAY" onclick="play()">NicoliNet</h2>
+        <p id='splash'>Turn on your JavaScript, bruh!</p>
+        <audio id="audio" src="sound/Nicolinet_Theme.ogg"></audio>
+        <div class=subheading>
+            <a href="Epic%20Stuff.html">
+                <p class='nav'>Epic Stuff</p>
+            </a>
+            <a href="Nix_Pix.html">
+                <p class='nav'>Nix Pix</p>
+            </a>
+            <a href="Random%20Things.html">
+                <p class='nav'>Random Things</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <p class='nav'>The MYSTERY button</p>
+            </a>
+        </div>
+    </div>
+    <div class='body'>
+        <div class="intro">
+            <h1 class="title">The Seecret <span value="PLAY" onclick="play()">NicoliNet</span> Customize/Membership* Machine</h1>
+            <div class="into-pic">
+                <img src="pics/Nicoli.png" alt="The Grate Nicoli">
+            </div>
+            <p id='address'></p>
+            <p id='latlong'></p>
+            <p>NicoliNet is truly the most radical website on Earth. And, because you have gone to great lengths to explore its deepest depths, you are now rewarded with the ability to customize NicoliNet and make it your own! Simply enter the private information below to get started!</p>
+        </div>
+        <div id="nicoliNetCustomize">
+            <form id='customizeForm'>
+                <h2>NicoliNet Membership* Sign-Up</h2>
+                <p>
+                    <label for="firstName">First Name: (required)</label>
+                    <input type="text" id='firstName' placeholder='The'>
+                </p>
+                <p>
+                    <label for="middleName">Middle Name (if applicable):</label>
+                    <input type="text" id='middleName' placeholder='Grate'>
+                </p>
+                <p>
+                    <label for='lastName'>Last Name: (required)</label>
+                    <input type='text' id='lastName' placeholder='Nicoli'>
+                </p>
+                <p>
+                    <label for="nickName">Nickname (leave blank if you prefer your regular name):</label>
+                    <input type='text' id='nickName' placeholder='NicoliNet'>
+                </p>
+                <p>
+                    <label for='backgroundColor'>Choose a prefrrred background color:</label>
+                    <input id='backgroundColor' type='text' placeholder='#ffffff' data-wheelcolorpicker data-wcp-format='css'>
+                </p>
+                <p>
+                    <label for='colorTheme'>Color Scheme: (required)</label>
+                    <input type='radio' id='light' name='theme' value='liginputht'>
+                    <label for='light'>Light (default)</label>
+                    <input type='radio' id='dark' name='theme' value='dark'>
+                    <label for='dark'>Dark (coming soon)</label>
+                </p>
+                <p id='betaCase'>
+                    Do you want to be part of NicoliNet BETAs?: (required)
+                    <input type='radio' id='betayes' name='beta' value='yes'>
+                    <label for='betayes'>Yay</label>
+                    <input type='radio' id='betano' name='beta' value='no'>
+                    <label for='betano'>Nay</label>
+                </p>
+                <p id='musicCase'>
+                    Music Preferences:
+                    <input type='radio' id='astley' name='musicPref' value='astley'>
+                    <label for='astley'>Astleyify</label>
+                    <input type='radio' id='wham' name='musicPref' value='wham'>
+                    <label for='wham'>Whamify</label>
+                    <input type='radio' id='musicNo' name='musicPref' value="no">
+                    <label for='musicNo'>I HATE MUSIC</label>
+                </p>
+                <p id='comicSans'>
+                    COMIC SANSIFY:
+                    <input type='radio' id='comicyes' name='comic' value='yes'>
+                    <label for='comicyes'>YEEEET</label>
+                    <input type='radio' id='comicno' name='comic' value='no'>
+                    <label for='comicno'>Naw</label>
+                </p>
+                <p>
+                    That's it for now... Remember to check back for more features!
+                </p>
+                <input type='submit' id='submitCustomizeForm'>
+            </form>
+        </div>
+    </div>
+    <div class=footer>
+        <p><span class="Nicolinet.com" value="PLAY" onclick="play()">NicoliNet</span>.com <br>&copy;2017 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
+    </div>
+    <script src='javascript/jquery-3.2.0.js'></script>
+    <script src='javascript/splash.js'></script>
+    <script src="javascript/jquery.wheelcolorpicker.js"></script>
+    <link rel='stylesheet' type='text/css' href='css/wheelcolorpicker.css'>
+    <script src='javascript/location.js'></script>
+    <script src='javascript/termsofservice.js'></script>
+    <script src="https://freegeoip.net/json/?callback=locateLocation"></script>
+    <script src='javascript/initCustom.js'></script>
+    <script src='javascript/customizer.js'></script>
+    <script src='javascript/settingPage.js'></script>
+    <script src='javascript/flowey.js'></script>
+    <div id='ytcontent'></div>
+</body>
+
+</html>

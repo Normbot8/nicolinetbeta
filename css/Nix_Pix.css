@@ -1,0 +1,240 @@
+/*MOAR Fonts:
+font-family: 'Orbitron', sans-serif;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Baloo Bhaina', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Audiowide', cursive;
+*/
+
+.pagemap h1 {
+    text-align: center;
+    padding-top: 20px;
+    font: 35px 'Luckiest Guy', cursive;
+    color: darkgreen;
+}
+
+.pagemap h2 {
+    font: 15px Arial, sans-serif;
+    color: darkgray;
+    text-align: center;
+}
+
+.pagemap li a {
+    font: 25px 'poiret one', cursive;
+    list-style: none;
+    color: black;
+    padding-left: 10px;
+}
+
+.pagemap {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px
+}
+
+.Minecraft {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    overflow: scroll;
+}
+
+.Minecraft img {
+    display: block;
+    width: 500px;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Minecraft p,
+.Minecraft a {
+    font-family: VT323;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
+
+.Minecraft a {
+    padding: 0px;
+}
+
+.enderdragon {
+    width: 1000px;
+}
+
+.yeesong {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    overflow: scroll;
+}
+
+.yeesong h1 {
+    font: 40px 'Permanent Marker', cursive;
+    text-align: center;
+    color: yellowgreen;
+}
+
+.yeesong iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.yeesong p {
+    font: 24px/25px 'Baloo Bhaina', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nicolinet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    overflow: scroll;
+}
+
+.nicolinet h1 {
+    text-align: center;
+    font-family: 'Sigmar One', cursive;
+    color: #ff0000;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.nicolinet p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font: 25px 'Poiret One', cursive;
+}
+
+.nicolinet iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.nicolinet h2 {
+    font: 15px Helvetica, sans-serif;
+    text-align: center;
+    color: darkgray;
+}
+
+.rocketleague {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    overflow: scroll;
+}
+
+.rocketleague h1 {
+    font: 40px 'Audiowide', cursive;
+    text-align: center;
+    color: #1448E2;
+}
+
+.rocketleague p {
+    font: 25px 'Audiowide', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rocketleague img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: default;
+}
+
+.photoshop {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    overflow: scroll;
+}
+
+.photoshop h1 {
+    font: 40px 'Architects Daughter', cursive;
+    text-align: center;
+}
+
+.photoshop img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photoshop p {
+    font: 25px 'Architects Daughter', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.photoshop a {
+    color: inherit;
+}
+
+.music {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    overflow: scroll;
+}
+
+.music h1 {
+    font: 40px 'Luckiest Guy', cursive;
+    text-align: center;
+    color: purple;
+}
+
+.music img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.music p {
+    font: 24px/25px 'Baloo Bhaina', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.music a {
+    color: inherit;
+}
+
+.books {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    overflow: scroll;
+}
+
+.books h1 {
+    font: 40px 'Architects Daughter', cursive;
+    text-align: center;
+}
+
+.books img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    cursor: default;
+}
+
+.books p {
+    font: 25px 'Architects Daughter', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+}
