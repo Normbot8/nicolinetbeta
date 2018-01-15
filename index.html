@@ -41,7 +41,7 @@
             }
 
         </script>
-        <h2 value="PLAY" onclick="play()">NicoliNet</h2>
+        <h2 class="nicolinetsound">NicoliNet</h2>
         <p id='splash'>Turn on your JavaScript, bruh!</p>
         <audio id="audio" src="sound/Nicolinet_Theme.ogg"></audio>
         <div class=subheading>
@@ -66,7 +66,7 @@
             </div>
             <p id='address'></p>
             <p id='latlong'></p>
-            <p><span class="Yo">Hello!</span> <span id='mydudes'>my dudes</span>, and welcome to <span class="NicoliNet" value="PLAY" onclick="play()">NicoliNet</span>. <span class="NicoliNet" value="PLAY" onclick="play()">NicoliNet</span> is where I waste my time by putting my HTML and CSS knowledge to use. (I can't honestly say I put it to <em>good</em> use here.) Anyway, if you like strange websites with random things, then this is (probably) the site for you! Have fun!</p>
+            <p><span class="Yo">Hello!</span> <span id='mydudes'>my dudes</span>, and welcome to <span class="NicoliNet nicolinetsound">NicoliNet</span>. <span class="NicoliNet nicolinetsound">NicoliNet</span> is where I waste my time by putting my HTML and CSS knowledge to use. (I can't honestly say I put it to <em>good</em> use here.) Anyway, if you like strange websites with random things, then this is (probably) the site for you! Have fun!</p>
         </div>
         <h3 id='amazonTitle'>Amazon Reccomended Bundle:</h3>
         <div class="amazonSez">
@@ -85,14 +85,22 @@
         <div class="NicoliNetTheme">
             <a href="sound/Nicolinet%20Theme.m4a" download>
                 <h2>Download</h2><img src="pics/download.png" alt='download NicoliNet theme'></a>
-            <p><span value="PLAY" onclick="play()">the NicoliNet Theme</span> by clicking download!* (obviously)</p><br>
-            <p class="disclaimer">*Note: By clicking download you agree that <span value="PLAY" onclick="play()">NicoliNet</span> is the best website ever and you love it so much and you are so totally addicted to it that you forget not to use run-on sentences and also download the totally epic theme that is just the best and you are not being sarcastic. Not one bit.</p>
+            <p><span class="nicolinetsound"> the NicoliNet theme</span> by clicking download!* (obviously)</p><br>
+            <p class="disclaimer">*Note: By clicking download you agree that <span class="nicolinetsound">NicoliNet</span> is the best website ever and you love it so much and you are so totally addicted to it that you forget not to use run-on sentences and also download the totally epic theme that is just the best and you are not being sarcastic. Not one bit.</p>
         </div>
     </div>
     <div class=footer>
-        <p><span class="Nicolinet.com" value="PLAY" onclick="play()">NicoliNet</span>.com <br>&copy;2017 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
+        <p><span class="nicolinetsound">NicoliNet</span>.com <br>&copy;2018 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
     </div>
     <script src="javascript/jquery-3.2.0.js"></script>
+    <script>
+        $(".nicolinetsound").on("click", play);
+            function play() {
+                var nicoliNet = new Audio('sound/Nicolinet Theme.m4a');
+                nicoliNet.play();
+            }
+
+        </script>
     <script src='javascript/termsofservice.js'></script>
     <script src='javascript/splash.js'></script>
     <script src='javascript/location.js'></script>

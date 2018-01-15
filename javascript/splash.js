@@ -4,7 +4,7 @@ $(function () {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    var splashInt = randomInc(1, 33);
+    var splashInt = randomInc(1, 35);
     //time to use a (NINTENDO) switch statement
     switch (splashInt) {
         case 1:
@@ -106,6 +106,12 @@ $(function () {
             break;
         case 33:
             $('#splash').text('lol i think i actually deleted system32 on my ssd');
+            break;
+        case 34:
+            $('#splash').text('He wanted Chinese, but she wanted Chinese.');
+            break;
+        case 35:
+            $('#splash').text('\'\'Only 40 thousand dollars in my bank account\'\'');
             break;
         default:
             break;

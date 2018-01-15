@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NicoliNet</title>
+    <title>NicoliNet Thank You Note Generator</title>
     <link rel='stylesheet' type='text/css' href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/thankyou.css">
     <link rel='stylesheet' type='text/css' href='css/footer.css'>
@@ -37,15 +37,8 @@
 
 <body>
     <div class="heading">
-        <script>
-            function play() {
-                var audio = document.getElementById("audio");
-                audio.play();
-            }
-        </script>
-        <h2 value="PLAY" onclick="play()">NicoliNet</h2>
+        <h2 class="nicolinetsound">NicoliNet</h2>
         <p id='splash'>Turn on your JavaScript, bruh!</p>
-        <audio id="audio" src="sound/Nicolinet_Theme.ogg"></audio>
         <div class=subheading>
             <a href="Epic%20Stuff.html">
                 <p class='nav'>Epic Stuff</p>
@@ -63,13 +56,13 @@
     </div>
     <div class='body'>
         <div class="intro">
-            <h1 class="title"><span value="PLAY" onclick="play()">NicoliNet</span> Official Thank-You Note Generator</h1>
+            <h1 class="title"><span class="nicolinetsound">NicoliNet</span> Official Thank-You Note Generator</h1>
             <div class="into-pic">
                 <img src="pics/Nicoli.png" alt="The Grate Nicoli">
             </div>
             <p id='address'></p>
             <p id='latlong'></p>
-            <p>Ever get tired of writing those <i>laborious</i> thank-you notes every year? Well, we here at <span value="PLAY" onclick="play()">NicoliNet</span> have found a solution. Using our highly advanced legendary coding skills, we have created the ultimate Thank-You Note Generator. Simply fill out the form below and click the generate button to get you very own thank-you card, with barely an ounce of effort. (Disclaimer: <span value="PLAY" onclick="play()">NicoliNet</span> does not guarantee satisfaction.)</p>
+            <p>Ever get tired of writing those <i>laborious</i> thank-you notes every year? Well, we here at <span class="nicolinetsound">NicoliNet</span>> have found a solution. Using our highly advanced legendary coding skills, we have created the ultimate Thank-You Note Generator. Simply fill out the form below and click the generate button to get you very own thank-you card, with barely an ounce of effort. (Disclaimer: <span class="nicolinetsound">NicoliNet</span> does not guarantee satisfaction.)</p>
         </div>
         <div class="generator">
             <form id='form'>
@@ -78,7 +71,7 @@
                     <input type='text' name='gifter' class="input" placeholder="Name Of Gift-Giver" id="giver">
                 </p>
                 <p>
-                    <label for="recipent">Your Name: (Don't worry, all of this information is stored locally, and not sent to <span value="PLAY" onclick="play()">NicoliNet</span>. Well, probably.)</label>
+                    <label for="recipent">Your Name: (Don't worry, all of this information is stored locally, and not sent to <span class="nicolinetsound">NicoliNet</span>. Well, probably.)</label>
                     <input type="text" name="giftee" class="input" placeholder="Your Name" id="recipent">
                 </p>
                 <p>
@@ -219,9 +212,17 @@
 
     </div>
     <div class=footer>
-        <p><span class="Nicolinet.com" value="PLAY" onclick="play()">NicoliNet</span>.com <br>&copy;2017 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
+        <p><span class="nicolinetsound">NicoliNet</span>.com <br>&copy;2018 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
     </div>
     <script src="javascript/generator.js"></script>
+    <script>
+        $(".nicolinetsound").on("click", play);
+            function play() {
+                var nicoliNet = new Audio('sound/Nicolinet Theme.m4a');
+                nicoliNet.play();
+            }
+
+        </script>
     <script src='javascript/print.js'></script>
     <script src='javascript/widthandheightpreview.js'></script>
     <script src="javascript/jquery-3.2.0.js"></script>

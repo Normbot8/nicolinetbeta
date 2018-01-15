@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NicoliNet</title>
+    <title>NicoliNet Customizer</title>
     <link rel='stylesheet' type="text/css" href="css/header.css">
     <link rel='stylesheet' type='text/css' href='css/footer.css'>
     <link rel="stylesheet" type="text/css" href="css/customize.css">
@@ -45,7 +45,7 @@
             }
 
         </script>
-        <h2 value="PLAY" onclick="play()">NicoliNet</h2>
+        <h2 class="nicolinetsound">NicoliNet</h2>
         <p id='splash'>Turn on your JavaScript, bruh!</p>
         <audio id="audio" src="sound/Nicolinet_Theme.ogg"></audio>
         <div class=subheading>
@@ -65,17 +65,17 @@
     </div>
     <div class='body'>
         <div class="intro">
-            <h1 class="title">The Seecret <span value="PLAY" onclick="play()">NicoliNet</span> Customize/Membership* Machine</h1>
+            <h1 class="title">The Seecret <span class="nicolinetsound">NicoliNet</span> Customize/Membership* Machine</h1>
             <div class="into-pic">
                 <img src="pics/Nicoli.png" alt="The Grate Nicoli">
             </div>
             <p id='address'></p>
             <p id='latlong'></p>
-            <p>NicoliNet is truly the most radical website on Earth. And, because you have gone to great lengths to explore its deepest depths, you are now rewarded with the ability to customize NicoliNet and make it your own! Simply enter the private information below to get started!</p>
+            <p><span class="nicolinetsound">NicoliNet</span> is truly the most radical website on Earth. And, because you have gone to great lengths to explore its deepest depths, you are now rewarded with the ability to customize NicoliNet and make it your own! Simply enter the private information below to get started!</p>
         </div>
         <div id="nicoliNetCustomize">
             <form id='customizeForm'>
-                <h2>NicoliNet Membership* Sign-Up</h2>
+                <h2><span class="nicolinetsound">NicoliNet</span> Membership* Sign-Up</h2>
                 <p>
                     <label for="firstName">First Name: (required)</label>
                     <input type="text" id='firstName' placeholder='The'>
@@ -104,7 +104,7 @@
                     <label for='dark'>Dark (coming soon)</label>
                 </p>
                 <p id='betaCase'>
-                    Do you want to be part of NicoliNet BETAs?: (required)
+                    Do you want to be part of <span class="nicolinetsound">NicoliNet</span> BETAs?: (required)
                     <input type='radio' id='betayes' name='beta' value='yes'>
                     <label for='betayes'>Yay</label>
                     <input type='radio' id='betano' name='beta' value='no'>
@@ -129,14 +129,22 @@
                 <p>
                     That's it for now... Remember to check back for more features!
                 </p>
-                <input type='submit' id='submitCustomizeForm'>
+                <input type='submit' id='submitCustomizeForm' value="Submit">
             </form>
         </div>
     </div>
     <div class=footer>
-        <p><span class="Nicolinet.com" value="PLAY" onclick="play()">NicoliNet</span>.com <br>&copy;2017 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
+        <p><span class="nicolinetsound">NicoliNet</span>.com <br>&copy;2018 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
     </div>
     <script src='javascript/jquery-3.2.0.js'></script>
+    <script>
+        $(".nicolinetsound").on("click", play);
+            function play() {
+                var nicoliNet = new Audio('sound/Nicolinet Theme.m4a');
+                nicoliNet.play();
+            }
+
+        </script>
     <script src='javascript/splash.js'></script>
     <script src="javascript/jquery.wheelcolorpicker.js"></script>
     <link rel='stylesheet' type='text/css' href='css/wheelcolorpicker.css'>

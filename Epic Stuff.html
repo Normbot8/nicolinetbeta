@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NicoliNet</title>
+    <title>NicoliNet - Epic Stuff</title>
     <link rel='stylesheet' type='text/css' href='css/header.css'>
     <link rel="stylesheet" type="text/css" href="css/Epic%20Stuff.css">
     <link rel='stylesheet' type='text/css' href='css/footer.css'>
@@ -37,14 +37,7 @@
 
 <body>
     <div class=heading>
-        <script>
-            function play() {
-                var audio = document.getElementById("audio");
-                audio.play();
-            }
-
-        </script>
-        <h2 value="PLAY" onclick="play()">NicoliNet</h2>
+        <h2 class="nicolinetsound">NicoliNet</h2>
         <p id='splash'>Turn on your JavaScript, bruh!</p>
         <audio id="audio" src="sound/Nicolinet_Theme.ogg"></audio>
         <div class=subheading>
@@ -81,12 +74,17 @@
         <div class="piano">
             <h1>Piano</h1>
             <img src="pics/piano.jpg">
-            <p>The piano is a very grate instument. In fact, all of us here at <span class="nicolinet" value="PLAY" onclick="play()">NicoliNet</span> play the piano. All of the grate composers, like <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Mozart</a>, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Bach</a>, and <a href="https://www.youtube.com/watch?v=jgpJVI3tDbY" target="_blank">Rick Astley</a> (probably) played the piano. It can play <em>all</em> the notes you'll ever want to play, and it is epic. It also sounds cool in addition to not being a string instrument (it's percussion).</p>
+            <p>The piano is a very grate instument. In fact, all of us here at <span class="nicolinet nicolinetsound">NicoliNet</span> play the piano. All of the grate composers, like <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Mozart</a>, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Bach</a>, and <a href="https://www.youtube.com/watch?v=jgpJVI3tDbY" target="_blank">Rick Astley</a> (probably) played the piano. It can play <em>all</em> the notes you'll ever want to play, and it is epic. It also sounds cool in addition to not being a string instrument (it's percussion).</p>
+        </div>
+        <div class="overwatch">
+            <h1>Overwatch</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UcGhZLigyvI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Overwatch is a fun video game in which you battle the other team with a selection of heroes, such as Moira (the best one) or Hanzo (shown in the video above). In the majestic gameplay video above, the two teams are attampting to capture the objective. You can go take a look for yourself at <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">playoverwatch.com</a>.</p>
         </div>
         <div class="cheesenpasta">
             <h1>Cheese and Pasta (Or Perhaps Pasta and cheese)</h1>
             <img src="pics/pasta.jpg">
-            <p>The font you see in the title is called "Luckiest Guy". Do you know why? That's right. If you're eating pasta (or cheese), you're a very lucky guy. In fact, here at <span class="nicolinet" value="PLAY" onclick="play()">NicoliNet</span> we all believe that pasta and cheese are tied for the second best food, only to be beaten by a tie of pasta <em>with</em> cheese and Filet Mignon. Understand? Good!</p>
+            <p>The font you see in the title is called "Luckiest Guy". Do you know why? That's right. If you're eating pasta (or cheese), you're a very lucky guy. In fact, here at <span class="nicolinet nicolinetsound">NicoliNet</span> we all believe that pasta and cheese are tied for the second best food, only to be beaten by a tie of pasta <em>with</em> cheese and Filet Mignon. Understand? Good!</p>
         </div>
         <div class="thisvid">
             <h1>This Epic Vid</h1>
@@ -100,9 +98,17 @@
         </div>
     </div>
     <div class=footer>
-        <p><span class="Nicolinet.com" value="PLAY" onclick="play()">NicoliNet</span>.com <br>&copy;2017 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
+        <p><span class="Nicolinet.com nicolinetsound">NicoliNet</span>.com <br>&copy;2018 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
     </div>
     <script src="javascript/jquery-3.2.0.js"></script>
+    <script>
+        $(".nicolinetsound").on("click", play);
+            function play() {
+                var nicoliNet = new Audio('sound/Nicolinet Theme.m4a');
+                nicoliNet.play();
+            }
+
+        </script>
     <script src='javascript/termsofservice.js'></script>
     <script src='javascript/splash.js'></script>
     <script src='javascript/location.js'></script>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NicoliNet</title>
+    <title>NicoliNet - Random Things</title>
     <link rel='stylesheet' type='text/css' href='css/header.css'>
     <link rel="stylesheet" type="text/css" href="css/Random%20Things.css">
     <link rel='stylesheet' type='text/css' href='css/footer.css'>
@@ -44,9 +44,8 @@
             }
 
         </script>
-        <h2 value="PLAY" onclick="play()">NicoliNet</h2>
+        <h2 class="nicolinetsound">NicoliNet</h2>
         <p id='splash'>Turn on your JavaScript, bruh!</p>
-        <audio id="audio" src="sound/Nicolinet_Theme.ogg"></audio>
         <div class=subheading>
             <a href="Epic%20Stuff.html">
                 <p class='nav'>Epic Stuff</p>
@@ -70,12 +69,12 @@
             </div>
             <p id='address'></p>
             <p id='latlong'></p>
-            <p>Everybody loves a bit of randomness. So why not make a whole page dedicated to it? Here, we've taken suggestions from our (mostly) beloved <span class="NicoliNet" value="PLAY" onclick="play()">NicoliNet</span> viewers and put anything they wanted on NicoliNet. In this secion, there will be no captions or explanations whatsoever unless absolutely necessary. Random Things will also be the most <s>oftenly(?)</s> frequently updated part of the site, as we are always getting more suggestions. We really do hope your brain survives. Have Fun! <br> <br> -The <span class="NicoliNet" value="PLAY" onclick="play()">NicoliNet</span> Team</p>
+            <p>Everybody loves a bit of randomness. So why not make a whole page dedicated to it? Here, we've taken suggestions from our (mostly) beloved <span class="NicoliNet nicolinetsound">NicoliNet</span> viewers and put anything they wanted on NicoliNet. In this section, there will be no captions or explanations whatsoever unless absolutely necessary. Random Things will also be the most <s>oftenly(?)</s> frequently updated part of the site, as we are always getting more suggestions. We really do hope your brain survives. Have Fun! <br> <br> -The <span class="NicoliNet nicolinetsound">NicoliNet</span> Team</p>
         </div>
     </div>
     <div class="cow">
 
-        <iframe width="480" height="270" src="https://www.youtube.com/embed/62Ov_ptXsE8" frameborder="0" allowfullscreen class="meat"></iframe>
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen class="meat"></iframe>
 
         <iframe width="320" height="180" src="https://www.youtube.com/embed/_cjV3gbex1E" frameborder="0" allowfullscreen class="meat"></iframe>
 
@@ -85,24 +84,30 @@
 
         <img src="http://img.memecdn.com/Epic-Football-Gif_o_100468.gif" class="meat" alt='trolly football guys'>
 
-        <div class="meat">
-            <p class="nineplusnine">9+9=10</p>
-            <audio controls class="nineandnine">
-            <source src="sound/(We%20know%20that)%209+9=10.m4a" type="audio/mpeg">
-            Duuuuude! Your browser is totally outdated! Get some HTML5 epicness!
-        </audio>
-        </div>
-
         <iframe width="480" height="270" src="https://www.youtube.com/embed/cRpdIrq7Rbo" frameborder="0" allowfullscreen class="meat kazoo"></iframe>
+        
+        <iframe width="427" height="250" src="https://www.youtube.com/embed/QngdmlE2-Mk" frameborder="0" class="meat garage" allowfullscreen></iframe>
 
         <img src="pics/kazzo.jpg" class="meat" width="45%" alt='bad kazoo kid photoshopping'>
 
         <iframe width="427" height="240" src="https://www.youtube.com/embed/HQ-DwYOCn-k" frameborder="0" class="meat" allowfullscreen></iframe>
+        
+        <img src="pics/wae.png" class="meat wae">
+        
+        <img  class="meat system32" src="pics/system32.jpg">
     </div>
-    <div class=footer>
-        <p><span class="Nicolinet.com" value="PLAY" onclick="play()">NicoliNet</span>.com <br>&copy;2017 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
+    <div class="footer">
+        <p><span class="nicolinetsound">NicoliNet</span>.com <br>&copy;2018 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
     </div>
     <script src="javascript/jquery-3.2.0.js"></script>
+    <script>
+        $(".nicolinetsound").on("click", play);
+            function play() {
+                var nicoliNet = new Audio('sound/Nicolinet Theme.m4a');
+                nicoliNet.play();
+            }
+
+        </script>
     <script src='javascript/termsofservice.js'></script>
     <script src='javascript/splash.js'></script>
     <script src='javascript/location.js'></script>

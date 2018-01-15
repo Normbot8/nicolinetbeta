@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NicoliNet</title>
+    <title>NicoliNet Arcade</title>
     <link rel='stylesheet' type='text/css' href='css/header.css'>
     <link rel="stylesheet" type="text/css" href="css/arcade.css">
     <link rel='stylesheet' type='text/css' href='css/footer.css'>
@@ -37,13 +37,7 @@
 
 <body>
     <div class=heading>
-        <script>
-            function play() {
-                var audio = document.getElementById("audio");
-                audio.play();
-            }
-        </script>
-        <h2 value="PLAY" onclick="play()">NicoliNet</h2>
+        <h2 class="nicolinetsound">NicoliNet</h2>
         <p id='splash'>Turn on your JavaScript, bruh!</p>
         <audio id="audio" src="sound/Nicolinet_Theme.ogg"></audio>
         <div class=subheading>
@@ -63,7 +57,7 @@
     </div>
     <div class="body">
         <div class="intro">
-            <h1 class="title">NicoliNet Arcade</h1>
+            <h1 class="title"><span class="nicolinetsound">NicoliNet</span> Arcade</h1>
             <div class="into-pic">
                 <img src="pics/Nicoli.png" alt="The Grate Nicoli">
             </div>
@@ -95,7 +89,7 @@
         </div>
         <div class='game'>
             <h3 class='gameName'>Guess-The-Social-Security-Number Game Pt. 2</h3>
-            <p class='gameIntro'>Did you enjoy the previous Guess-The-Social-Security-Number Game? If so, then you'll probably like this game even MORE (or just as much) (if that's even possible). Well, since us here at NicoliNet know that you're always craving some more FUN Social Security Number trolls, we've created a fun twist on the last game. Instead of us trying to guess your social security number, you get to try to guess ours! Fun, right! Play it below!</p>
+            <p class='gameIntro'>Did you enjoy the previous Guess-The-Social-Security-Number Game? If so, then you'll probably like this game even MORE (or just as much) (if that's even possible). Well, since us here at <span class="nicolinetsound">NicoliNet</span> know that you're always craving some more FUN Social Security Number trolls, we've created a fun twist on the last game. Instead of us trying to guess your social security number, you get to try to guess ours! Fun, right! Play it below!</p>
             <div id='securityGame2'>
                 <p id='ssGameInstr'>Enter Your Guess Below:</p>
                 <form>
@@ -110,7 +104,7 @@
         </div>
         <div class='game'>
             <h3 class='gameName'>Tic-Tac-Toe</h3>
-            <p class='gameIntro'>Nothing's better than the good old classics, right? (Actually, that's, like, not true, breh, but, y'know, whatever.) We've decided to include a tic-tac-toe game to NicoliNet so that YOU can interact with a friend in REAL LIFE through a COMPUTER. WOW! And because us here at NicoliNet are such HUGE supporters of REAL-LIFE interactions as opposed to sitting by yourself at a computer, we've made it so that there is no AI to play against, and you must play against a friend (not cuz making an AI is too hard or anything). ANYWAY, we hope you enjoy this FUN game.</p>
+            <p class='gameIntro'>Nothing's better than the good old classics, right? (Actually, that's, like, not true, breh, but, y'know, whatever.) We've decided to include a tic-tac-toe game to <span class="nicolinetsound">NicoliNet</span> so that YOU can interact with a friend in REAL LIFE through a COMPUTER. WOW! And because us here at <span class="nicolinetsound">NicoliNet</span> are such HUGE supporters of REAL-LIFE interactions as opposed to sitting by yourself at a computer, we've made it so that there is no AI to play against, and you must play against a friend (not cuz making an AI is too hard or anything). ANYWAY, we hope you enjoy this FUN game.</p>
             <p id='tttLabel'>Tic Tac Toe Board:</p>
             <canvas id='tttBoard' width='300px' height='300px'></canvas>
             <p id='tttStatus'>Click "start" to begin game:</p>
@@ -151,10 +145,18 @@
             </table>
         </div>
         <div class=footer>
-            <p><span class="Nicolinet.com" value="PLAY" onclick="play()">NicoliNet</span>.com <br>&copy;2017 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
+            <p><span class="nicolinetsound">NicoliNet</span>.com <br>&copy;2018 Nicoli Industries.<br>Website created by the Grate Nicoli.<br><br>Some images subject to copyright, except when possibly otherwise specified. For example, see our thumbnail up there? That's actually free for anybody to use and stuff. However, that grate picture of The Grate Nicoli at the top of the page is probably subject to copyright law, as it is an original work from our founder, The Grate Nicoli. If you were expecting a site map down here, you've come to the wrong place. The right place is <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">here</a>. *snicker* *snicker*</p>
         </div>
     </div>
     <script src="javascript/jquery-3.2.0.js"></script>
+    <script>
+        $(".nicolinetsound").on("click", play);
+            function play() {
+                var nicoliNet = new Audio('sound/Nicolinet Theme.m4a');
+                nicoliNet.play();
+            }
+
+        </script>
     <script src='javascript/termsofservice.js'></script>
     <script src='javascript/splash.js'></script>
     <script src='javascript/location.js'></script>
