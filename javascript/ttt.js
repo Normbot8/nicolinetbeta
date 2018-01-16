@@ -68,15 +68,15 @@ $(function () {
         $('#tttStart').off('click');
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         makeBoard();
-        var tlc = null;
-        var tm = null;
-        var trc = null;
-        var ml = null;
-        var m = null;
-        var mr = null;
-        var bl = null;
-        var bm = null;
-        var br = null;
+        tlc = undefined;
+        tm = undefined;
+        trc = undefined;
+        ml = undefined;
+        m = undefined;
+        mr = undefined;
+        bl = undefined;
+        bm = undefined;
+        br = undefined;
         $('#tttStart').hide(500);
         turnNum = 1;
         playerDetect();
@@ -98,43 +98,43 @@ $(function () {
 
     function checkCombos() {
         if (turnNum >= 5) {
-            if (ml === tlc && bl === tlc) {
+            if (ml === tlc && bl === tlc && ml != undefined) {
                 winner = tlc;
                 declareWin();
                 return;
             }
 
-            if (m === tm && bm === tm) {
+            if (m === tm && bm === tm && m != undefined) {
                 winner = tm;
                 declareWin();
                 return;
             }
-            if (mr === trc && br === trc) {
+            if (mr === trc && br === trc && mr != undefined) {
                 winner = tm;
                 declareWin();
                 return;
             }
-            if (tm === tlc && trc === tlc) {
+            if (tm === tlc && trc === tlc && tm != undefined) {
                 winner = tlc;
                 declareWin();
                 return;
             }
-            if (m === ml && mr === ml) {
+            if (m === ml && mr === ml && m != undefined) {
                 winner = ml;
                 declareWin();
                 return;
             }
-            if (bm === bl && br === bl) {
+            if (bm === bl && br === bl && bm != undefined) {
                 winner = bl;
                 declareWin();
                 return;
             }
-            if (m === tlc && br === tlc) {
+            if (m === tlc && br === tlc && m != undefined) {
                 winner = tlc;
                 declareWin();
                 return;
             }
-            if (m === bl && trc === bl) {
+            if (m === bl && trc === bl && m != undefined) {
                 winner = bl;
                 declareWin();
                 return;
@@ -157,6 +157,9 @@ $(function () {
                     ctx.lineTo(10, 90);
                     ctx.stroke();
                     tlc = 'p2';
+                } else {
+                    tryAgainP2();
+                    return;
                 }
                 break;
             case p2tm:
@@ -170,6 +173,9 @@ $(function () {
                     ctx.stroke();
                     tm = 'p2';
 
+                } else {
+                    tryAgainP2();
+                    return;
                 }
                 break;
             case p2trc:
@@ -183,6 +189,9 @@ $(function () {
                     ctx.stroke();
                     trc = 'p2';
 
+                } else {
+                    tryAgainP2();
+                    return;
                 }
                 break;
             case p2ml:
@@ -196,6 +205,9 @@ $(function () {
                     ctx.stroke();
                     ml = 'p2';
 
+                } else {
+                    tryAgainP2();
+                    return;
                 }
                 break;
             case p2m:
@@ -209,6 +221,9 @@ $(function () {
                     ctx.stroke();
                     m = 'p2';
 
+                } else {
+                    tryAgainP2();
+                    return;
                 }
                 break;
             case p2mr:
@@ -222,6 +237,9 @@ $(function () {
                     ctx.stroke();
                     mr = 'p2';
 
+                } else {
+                    tryAgainP2();
+                    return;
                 }
                 break;
             case p2bl:
@@ -235,6 +253,9 @@ $(function () {
                     ctx.stroke();
                     bl = 'p2';
 
+                } else {
+                    tryAgainP2();
+                    return;
                 }
                 break;
             case p2bm:
@@ -248,6 +269,9 @@ $(function () {
                     ctx.stroke();
                     bm = 'p2';
 
+                } else {
+                    tryAgainP2();
+                    return;
                 }
                 break;
             case p2br:
@@ -261,6 +285,9 @@ $(function () {
                     ctx.stroke();
                     br = 'p2';
 
+                } else {
+                    tryAgainP2();
+                    return;
                 }
                 break;
         }
@@ -277,6 +304,9 @@ $(function () {
                     ctx.arc(50, 50, 40, 0, 2 * Math.PI);
                     ctx.stroke();
                     tlc = 'p1';
+                } else {
+                    tryAgainP1();
+                    return;
                 }
                 break;
             case p1tm:
@@ -286,6 +316,9 @@ $(function () {
                     ctx.stroke();
                     tm = 'p1';
 
+                } else {
+                    tryAgainP1();
+                    return;
                 }
                 break;
             case p1trc:
@@ -295,6 +328,9 @@ $(function () {
                     ctx.stroke();
                     trc = 'p1';
 
+                } else {
+                    tryAgainP1();
+                    return;
                 }
                 break;
             case p1ml:
@@ -304,6 +340,9 @@ $(function () {
                     ctx.stroke();
                     ml = 'p1';
 
+                } else {
+                    tryAgainP1();
+                    return;
                 }
                 break;
             case p1m:
@@ -313,6 +352,9 @@ $(function () {
                     ctx.stroke();
                     m = 'p1';
 
+                } else {
+                    tryAgainP1();
+                    return;
                 }
                 break;
             case p1mr:
@@ -322,6 +364,9 @@ $(function () {
                     ctx.stroke();
                     mr = 'p1';
 
+                } else {
+                    tryAgainP1();
+                    return;
                 }
                 break;
             case p1bl:
@@ -331,6 +376,9 @@ $(function () {
                     ctx.stroke();
                     bl = 'p1';
 
+                } else {
+                    tryAgainP1();
+                    return;
                 }
                 break;
             case p1bm:
@@ -340,6 +388,9 @@ $(function () {
                     ctx.stroke();
                     bm = 'p1';
 
+                } else {
+                    tryAgainP1();
+                    return;
                 }
                 break;
             case p1br:
@@ -349,6 +400,9 @@ $(function () {
                     ctx.stroke();
                     br = 'p1';
 
+                } else {
+                    tryAgainP1();
+                    return;
                 }
                 break;
         }
@@ -356,7 +410,12 @@ $(function () {
     }
 
     function playerDetect() {
-        if (turnNum % 2 === 1) {
+        if (turnNum > 9) {
+            $('#tttStatus').text('Tie!');
+            $('#tttStart').text("Play Again?");
+            $('#tttStart').show(500);
+            $('#tttStart').on('click', playAgain);
+        } else if (turnNum % 2 === 1) {
             $("#tttStatus").text('Player 1 Turn:');
             $('.tttBp1').on('click', function () {
                 p1play(event);
@@ -366,7 +425,22 @@ $(function () {
             $('.tttBp2').on('click', function () {
                 p2play(event);
             });
+            return;
         }
+    }
+
+    function tryAgainP1() {
+        $("#tttStatus").text('U can\'t go there lol!');
+        $('.tttBp1').on('click', function () {
+            p1play(event);
+        });
+    }
+
+    function tryAgainP2() {
+        $("#tttStatus").text('U can\'t go there lol!');
+        $('.tttBp2').on('click', function () {
+            p2play(event);
+        });
     }
 
     function initGame() {
