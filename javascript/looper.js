@@ -20,7 +20,7 @@ $(function () {
         if (continueSpam === true) {
             var nicoliNet = new Audio('sound/Nicolinet Theme.m4a');
             nicoliNet.play();
-            setTimeout(spamCheck, 100);
+            setTimeout(spamCheck, 500);
         }
     }
     $("#spambutton").on("click", startSpam);
