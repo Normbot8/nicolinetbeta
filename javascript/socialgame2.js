@@ -28,6 +28,10 @@ $(function () {
             $("#ss2input").after('<p class=\'ssFormError\'>The first three digits of a Social Security Number CANNOT be 900 or greater!</p>');
             return;
         }
-        $('#securityGame2').append('<p id=\'ssGuess\'>WRONG! HAHAHA, you\'ll never guess OUR Social Security Number!</p>');
+        if (sspt1 === "kno" && sspt2 === "wl" && sspt3 === "edge") {
+            $('#securityGame2').append('<p id=\'ssGuess\'>Wow how gangster</p>');
+        } else {
+            $('#securityGame2').append('<p id=\'ssGuess\'>WRONG! HAHAHA, you\'ll never guess OUR Social Security Number!</p>');
+        }
     });
 });

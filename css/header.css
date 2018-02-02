@@ -99,6 +99,18 @@
     padding-top: 0px;
 }
 
+.mine {
+    border-bottom: 2px solid lightgrey;
+}
+
+#minetext {
+    font: 17px "Baloo bhaina", cursive;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -10px;
+}
+
 .NicoliNet {
     font: 25px 'orbitron', cursive;
     cursor: pointer;
